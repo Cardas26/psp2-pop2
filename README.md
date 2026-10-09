@@ -47,7 +47,7 @@ In the save and resume screens Down moves to the next slot, Cross confirms. Any 
 
 ### Changing the controls
 
-The game writes `ux0:data/pop2-recomp/controls.ini` the first time it starts: every action on its own line, at its default, with what it does.
+The game writes `ux0:data/pop2-recomp/controls.ini` the first time it starts with its defaults.
 
 ```ini
 ; Prince of Persia 2 - the controls. Read when the game starts: edit, save, start the game again.
