@@ -1,0 +1,4 @@
+* text=auto
+*.png binary
+port/upstream/** linguist-vendored
+port/livearea/template.xml -text

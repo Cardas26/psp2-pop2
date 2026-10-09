@@ -1,0 +1,18 @@
+name: Bug report
+description: A crash, a hang, or something that plays differently from the DOS game
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead. Say which level and where in it.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: >-
+        From the Diagnostics VPK: ux0:data/pop2-recomp/debug.log and ux0:data/pop2-recomp/watchdog.log.
+        For a crash, also the newest ux0:data/*.psp2dmp. Drag the files in.

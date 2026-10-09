@@ -1,0 +1,6 @@
+port/upstream/src/gen/
+port/upstream/ovl/
+port/upstream/obj/
+__pycache__/
+*.vpk
+*.psp2dmp
