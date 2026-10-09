@@ -1,3 +1,43 @@
+# Prince of Persia 2: The Shadow and the Flame for PS Vita
+
+Wanted to play this game on the Vita myself, so vibecoded it.
+
+The DOS game (1993, version 1.1) runs as native code, not under an emulator: a static recompiler turns its
+program into C, and a Vita platform layer gives it the screen, the sound and the buttons.
+
+## What works
+
+- The whole game, from the intro through all fourteen levels to the ending, with every cutscene.
+- FM music and digital sound effects, from the game's own Sound Blaster Pro driver.
+- The game's save and resume screens on L and R; a saved game's name is typed with the Vita's keyboard.
+- Two views (4:3, Wide) and four filters (Sharp, Pixel, Soft, LCD), kept between launches.
+- Every control remappable in `controls.ini` (see *Controls*).
+- The manual-lookup question at the start of the game is skipped.
+- Tested on a PCH-1000 and a PCH-2000. PS TV: untested.
+
+## Requirements
+
+- A PS Vita with custom firmware (HENkaku or Ensō). No plugins are needed.
+  - Optional: [PSVshell](https://github.com/Electry/PSVshell) to change the CPU and GPU clocks.
+- About 12 MB free space on `ux0:`.
+- The DOS game, **version 1.1 only**: its `PRINCE.EXE` is 259,583 bytes.
+  - Version 1.1 shipped in the *Prince of Persia Collection – Limited Edition* and the later *Prince of Persia 2*
+    rerelease; on the Collection's disc the game is in `PRINCE/PRINCE2/`.
+  - Version 1.0, the initial release and a cracked `PRINCE.EXE` are refused by name.
+
+## Setup
+
+1. Install `pop2.vpk` from the [latest release](../../releases/latest).
+2. Create the `ux0:data/pop2-recomp/` folder.
+3. Copy into it everything in the game's folder, the `SNDDRVRS` folder included.
+4. Launch the game.
+   - The first start checks every game file (a few seconds); a missing or changed file is named on the screen.
+   - Later starts skip the check unless a file changed.
+
+### Updating
+
+- Install the new VPK over the old one. Saves and settings are kept.
+
 ## Controls
 
 | Button | In play |
@@ -81,3 +121,36 @@ SaveScreen=Triangle+Square
 ResumeScreen=Triangle+Circle
 Restart=Triangle+Select
 ```
+
+## Known issues
+
+- None known. Please report anything that plays differently from the DOS game.
+
+## Reporting a bug
+
+1. Install the **diagnostics** build, `pop2-diagnostics.vpk` from the [latest release](../../releases/latest).
+2. Reproduce the problem.
+3. Attach to a [bug report](../../issues/new/choose):
+   - `ux0:data/pop2-recomp/debug.log`;
+   - `ux0:data/pop2-recomp/watchdog.log`, if present;
+   - after a crash, the newest `ux0:data/*.psp2dmp`.
+
+## Credits
+
+- Built with [Claude Code](https://claude.com/claude-code): the Vita platform layer, the recompiler fixes, the
+  controls and the performance work.
+- The static recompiler and its runtime by Supermedo:
+  [prince-of-persia-2-windows](https://github.com/Supermedo/prince-of-persia-2-windows).
+- [SDL2](https://github.com/libsdl-org/SDL) and [VitaSDK](https://vitasdk.org/).
+- The LCD filter: lcd3x by Gigaherz.
+- LiveArea art: the prince by Shiios42 and the title lettering by Kutsune (SteamGridDB).
+- Full list and licences: [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Legal
+
+- Prince of Persia is a trademark of Ubisoft. This project is not affiliated with or endorsed by Ubisoft.
+- No game data is included: the game plays only with your own copy of the version 1.1 files. The VPK carries the
+  game's program recompiled to C.
+- No donations are accepted.
+- The port's code is MIT licensed ([LICENSE](LICENSE)). The recompiler states no licence and is credited above;
+  other libraries keep their own licences ([THIRD_PARTY.md](THIRD_PARTY.md)).
