@@ -78,16 +78,6 @@ ScreenConfirm=Cross       ; save and resume screens: save (name it) or resume
 ScreenCancel=Circle, Start ; save and resume screens: leave
 ```
 
-- Change the value after `=`. Names are not case-sensitive; spaces around `=` and a `;` comment after the value are fine.
-- Several buttons for one action: `Jump=Up, LStickUp, Cross` (at most four). A chord: `Restart=Select+L`. No button: `None`.
-- Each stick counts as four buttons: `LStickUp` to `LStickRight` and `RStickUp` to `RStickRight`. 
-- The Screen actions (`ScreenNext`, `ScreenConfirm`, `ScreenCancel`) work only in the save and resume screens and the others only outside them.
-- The game reads the file when it starts.
-- A name the game does not know falls back to that action's default.
-- Delete a line to get its default back; delete the file to get every default back.
-- A button you hold for a chord still does its own action, so keep Jump, Crouch, Left, Right, Action and Strike off the first button of a chord.
-- If the game can read no action from the file, it keeps it as `controls-unreadable.ini` and writes a fresh one.
-
 ## Known issues
 
 - None known. Please report new bugs.
