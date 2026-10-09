@@ -12,9 +12,9 @@ Vibecoded. Based on the recompilation of the IR release by Supermedo. Adjusted f
 
 ## Requirements
 
-- Optional: [PSVshell](https://github.com/Electry/PSVshell) to change the CPU and GPU clocks.
 - 12 MB free space on `ux0:`.
 - The DOS game, **version 1.1 only**: its `PRINCE.EXE` is 259,583 bytes.
+- Optional: [PSVshell](https://github.com/Electry/PSVshell) to change the CPU and GPU clocks.
 
 ## Setup
 
