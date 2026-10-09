@@ -4,7 +4,8 @@ Vibecoded. Based on the recompilation of the IR release by Supermedo. Adjusted f
 
 ## What works
 
-- All levels and cutscenes.
+- All levels and cutscenes. Most of the rooms were smoke-tested and played manually, but some v1.1 
+recompilation issues may remain.  
 - FM music and sound effects (Sound Blaster Pro driver).
 - Save and resume.
 - 4:3 and widescreen views, four filters (Sharp, Pixel, Soft, LCD).
