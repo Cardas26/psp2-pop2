@@ -92,6 +92,11 @@ ScreenCancel=Circle, Start ; save and resume screens: leave
    - `ux0:data/pop2-recomp/watchdog.log`, if present;
    - after a crash, the newest `ux0:data/*.psp2dmp`.
 
+## Building
+
+In the current release, publishing the sourcecode means publishing parts of the game code directly: compressed overlays. 
+It will take more time to design a release that will allow for a sourcecode release and public building.
+
 ## Credits
 
 - The static recompiler and its runtime by Supermedo:
