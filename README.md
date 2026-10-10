@@ -4,6 +4,8 @@ Vibecoded. Based on the recompilation of the IR release by Supermedo. Adjusted f
 
 ## What works
 
+- Full speed. The game was designed to draw about 12 frames a second: its timing comes from its own 240 Hz timer, 
+which the port reproduces at 241.5 Hz. The same framerate is produced and maintained here. 
 - All levels and cutscenes. Most of the rooms were smoke-tested and played manually, but some v1.1 
 recompilation issues may remain.  
 - FM music and sound effects (Sound Blaster Pro driver).
