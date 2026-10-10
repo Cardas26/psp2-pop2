@@ -94,8 +94,8 @@ ScreenCancel=Circle, Start ; save and resume screens: leave
 
 ## Building
 
-In the current release, publishing the sourcecode means publishing parts of the game code directly: compressed overlays. 
-It will take more time to design a release that will allow for a sourcecode release and public building.
+Building requires unpacking compressed overlays, which the recompiler cannot do. It also exposes the game code directly
+which is why there are no building instructions here.
 
 ## Credits
 
